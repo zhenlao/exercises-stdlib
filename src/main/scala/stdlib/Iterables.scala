@@ -178,7 +178,7 @@ object Iterables extends AnyFlatSpec with Matchers with org.scalaexercises.defin
     val xt1 = Set(1, 2, 3)
     val yt1 = Set(3, 2, 1)
     xt1.iterator.sameElements(yt1) should be(res3) // Caution - see below!
-    /** Note that very small Sets (containing up to 4 elements) are implemented differently to larger Sets; as a result, their iterators produce the elements in the order that they were originally added. This causes the surprising (and arguably incorrect) behaviour in the final example above. */
+    // Note that very small Sets (containing up to 4 elements) are implemented differently to larger Sets; as a result, their iterators produce the elements in the order that they were originally added. This causes the surprising (and arguably incorrect) behaviour in the final example above. 
   }
 
 }
